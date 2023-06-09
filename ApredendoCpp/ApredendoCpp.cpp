@@ -51,10 +51,42 @@ int incrementoEDecremento() {
     return 0;
 }
 
+int estruturasCondicionais() {
+    std::cout << "Estruturas Condicionais\n\n";
+
+    int valor = 6;
+    char letra = 'g';
+
+    if (valor == 10) // Comparação
+    {
+        std::cout << "sim valor = 10\n";
+    }
+    else if (valor == 20) // Atribuição valor = 20
+    {
+        std::cout << "20 foi atribuido a váriavel Valor\n";
+    }
+    else if (valor <= 5 && letra == 'g') // AND <= >=
+    {
+        std::cout << "Condição AND respeitada\n";
+    }
+    else if (valor != 5 || letra == 'g') // OU !=
+    {
+        std::cout << "Condição OU respeitada\n";
+    }
+    else {
+        std::cout << "Não\n";
+    }
+
+
+    std::cout << "Valor: " << valor << std::endl;
+    return 0;
+}
+
 int main()
 {   
     //tiposDeDados();
-    incrementoEDecremento();
+    //incrementoEDecremento();
+    estruturasCondicionais();
     return 0;
 }
 
