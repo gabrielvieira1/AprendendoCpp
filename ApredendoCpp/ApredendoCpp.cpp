@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{   
+int tiposDeDados() {
     std::cout << "Apredendo tipos de dados\n\n";
 
     std::cout << "Booleanos:\n";
@@ -27,4 +26,36 @@ int main()
     std::cout << "\n\nArray de Chars (String):\n";
     char varios_byte[10 + 1] = "Gabriel";
     std::cout << "char varios_byte[10 + 1] = " << varios_byte << std::endl;
+    return 0;
 }
+
+int incrementoEDecremento() {
+    std::cout << "Incremento e Decremento\n\n";
+
+    int valor = 10;
+    int outro_valor = 0;
+
+    //valor = valor + 1;
+    //valor = valor += 1;
+    // O ++ depois do valor é sempre executado depois da expressão 
+    //outro_valor = valor++ + 1;
+    // O ++ antes do valor é sempre executado antes da expressão
+    //outro_valor = ++valor + 1;
+    //outro_valor = --valor + 1;
+    //valor = 10 * (3 / 5) + 1;
+    outro_valor = (++valor)++ + 1;
+
+
+    std::cout << "Valor: " << valor << std::endl;
+    std::cout << "Outro valor: " << outro_valor << std::endl;
+    return 0;
+}
+
+int main()
+{   
+    //tiposDeDados();
+    incrementoEDecremento();
+    return 0;
+}
+
+
